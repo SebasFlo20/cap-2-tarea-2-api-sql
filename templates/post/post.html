@@ -3,7 +3,7 @@
 {% block title %}{{ post['title'] }}{% endblock %}
 
 {% block content %}
-    <h1 class="my-4"><strong>Titulo del Post:</strong> {{ post['title'] }}</h1>
+    <h1 class="my-4"><strong>Titulo del Post:</strong> {{ post['tittle'] }}</h1>
     <p><strong>Fecha de creación del Post:</strong> {{ post['created'] }}</p>
     <p class="mb-4"><strong>Contenido del Post</strong>: {{ post['content'] }}</p>
     <a href="{{ url_for('edit_one_post', post_id=post['id']) }}" class="btn btn-warning mb-3">
